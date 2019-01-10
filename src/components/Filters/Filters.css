@@ -1,0 +1,47 @@
+.categories {
+  flex: 0 0 30%;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #eee;
+}
+
+.levels__heading {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.levels__list {
+  list-style: none;
+}
+
+.level {
+  margin: 0;
+  padding: 0;
+}
+
+.level__name {
+  cursor: pointer;
+  margin: 0;
+  padding-right: 2px;
+  display: inline-block;
+}
+
+.angle {
+  cursor: pointer;
+}
+
+.subject__list {
+  list-style: none;
+}
+
+.subject {
+  margin: 0;
+  padding: 0;
+}
+
+.discipline {
+  cursor: pointer;
+}

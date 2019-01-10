@@ -1,0 +1,17 @@
+.video {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.video__thumbnail-box {
+  padding-right: 16px;
+}
+
+.video__thumbnail {
+  width: 200px;
+}
+
+.video__title {
+  margin: 0;
+}
