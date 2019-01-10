@@ -41,19 +41,17 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <p>Home page</p>
-        <div className="video-container">
-          <Filters
-            videos={this.state.videos}
-            updateVideos={this.updateVideos}
-            updateTags={this.updateTags}
-          />
-          <VideoList
-            tags={this.state.activeTags}
-            videos={this.state.filteredVideos}
-          />
-        </div>
+      <div className="app">
+        <Filters
+          videos={this.state.videos}
+          updateVideos={this.updateVideos}
+          updateTags={this.updateTags}
+          activeTags={this.state.activeTags}
+        />
+        <VideoList
+          tags={this.state.activeTags}
+          videos={this.state.filteredVideos}
+        />
       </div>
     );
   }

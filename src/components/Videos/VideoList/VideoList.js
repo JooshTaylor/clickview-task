@@ -15,13 +15,13 @@ class VideoList extends Component {
 
   renderVideos() {
     if (this.state.videos) {
-      return this.state.videos.map(video => {
+      return this.state.videos.map((video, index) => {
         if (this.props.tags.length === 0) {
-          return <VideoItem video={video} />;
+          return <VideoItem key={index} video={video} />;
         } else {
           for (let i = 0; i < video.tags.length; i++) {
             if (this.props.tags.includes(video.tags[i])) {
-              return <VideoItem video={video} />;
+              return <VideoItem key={index} video={video} />;
             } else {
               return null;
             }
@@ -29,7 +29,7 @@ class VideoList extends Component {
         }
       });
     } else {
-      return <p>test</p>;
+      return null;
     }
   }
 

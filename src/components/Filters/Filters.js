@@ -86,6 +86,7 @@ class Navigation extends Component {
         <h2 className="levels__heading">Tags</h2>
         <TagFilters
           updateTags={this.props.updateTags}
+          activeTags={this.props.activeTags}
           videos={this.props.videos}
         />
       </div>

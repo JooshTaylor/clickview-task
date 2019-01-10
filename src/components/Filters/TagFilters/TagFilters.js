@@ -24,7 +24,12 @@ class TagFilters extends Component {
   renderTags() {
     if (this.state.tags) {
       return this.state.tags.map(tag => (
-        <TagItem key={tag} updateTags={this.props.updateTags} tag={tag} />
+        <TagItem
+          key={tag}
+          updateTags={this.props.updateTags}
+          activeTags={this.props.activeTags}
+          tag={tag}
+        />
       ));
     } else {
       return <p>hi</p>;

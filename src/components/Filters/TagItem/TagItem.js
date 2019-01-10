@@ -12,6 +12,9 @@ class TagItem extends Component {
         <p className="tag" onClick={this.onClick}>
           {this.props.tag}
         </p>
+        {this.props.activeTags.includes(this.props.tag) ? (
+          <i className="fas fa-check" />
+        ) : null}
       </div>
     );
   }
